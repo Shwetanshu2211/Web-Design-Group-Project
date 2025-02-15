@@ -67,7 +67,7 @@ body {
 
 /* Search Bar */
 .search-bar {
-    background: transparent;
+    background-color: rgba(255, 255, 255, 0.5);
     border: none;
     border-bottom: 1px solid black;
     padding: 5px;
@@ -226,15 +226,4 @@ body {
 .social-links a:hover {
     color: rgb(0, 0, 0);
     background-color: #000;
-}
-
-/* Footer Bottom */
-footer {
-    background-color: #006027;
-    color: rgb(2, 2, 2);
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
 }
