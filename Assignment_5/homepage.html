@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fusion Furnish</title>
+  <link rel="icon" href="/Images/Favicon.jpg">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="homepage.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar 1 -->
+  <header class="NavBar1 bg-light py-3">
+    <div class="container text-center">
+      <h1 class="name">Furniture Studio</h1>
+    </div>
+  </header>
+
+  <!-- Navigation Bar 2 -->
+  <header class="NavBar2 bg-dark py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Navigation Links -->
+        <div class="d-flex align-items-center">
+          <!-- Hamburger Menu for Mobile -->
+          <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-light">&#9776;</span>
+          </button>
+          <!-- Navigation Links -->
+          <nav class="NavLinks collapse navbar-collapse d-md-flex" id="navbarNav">
+            <a href="#explore-now" class="text-light me-3">Explore Now</a>
+            <a href="#offerings" class="text-light me-3">Offerings</a>
+            <a href="#about-us" class="text-light me-3">About Us</a>
+            <a href="#faqs" class="text-light me-3">FAQs</a>
+            <a href="#reviews" class="text-light me-3">Reviews</a>
+            <a href="#contact-us" class="text-light">Contact Us</a>
+          </nav>
+        </div>
+        <!-- Search Bar -->
+        <div class="d-flex align-items-center">
+          <input type="text" class="form-control me-2" placeholder="What are you looking for?">
+          <button class="btn btn-light">&#128269;</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Explore Now Section with Bootstrap Carousel -->
+  <section id="explore-now" class="section py-5" style="background-color: #f8f9fa;">
+    <div class="container-fluid p-0">
+      <!-- Main Heading (Centered) -->
+      <h2 class="text-center mb-4" style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 600; color: #2c3e50; letter-spacing: 1px;">
+        Explore Now
+      </h2>
+      <!-- Carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="height: 100vh; width: 100vw;">
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- Carousel Slides -->
+        <div class="carousel-inner h-100">
+          <!-- Slide 1 -->
+          <div class="carousel-item active h-100">
+            <img src="images/furniture1.jpg" class="d-block w-100 h-100" alt="Furniture 1" style="object-fit: cover;">
+            <div class="carousel-caption text-left" style="top: 20%; left: 10%; max-width: 500px; font-family: 'Playfair Display', serif; color: #f4f4f4;">
+              <h3 style="font-size: 2.5rem; font-weight: 600; letter-spacing: 1px; margin-bottom: 1rem;">Hello, Neighbor!</h3>
+              <p style="font-size: 1.2rem; line-height: 1.6; color: #e0e0e0;">Discover furniture that feels like home. Let us bring your vision to life—book a private appointment and experience design tailored just for you.</p>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item h-100">
+            <img src="images/furniture4.jpg" class="d-block w-100 h-100" alt="Furniture 2" style="object-fit: cover;">
+            <div class="carousel-caption text-left" style="top: 20%; left: 10%; max-width: 500px; font-family: 'Playfair Display', serif; color: #f4f4f4;">
+              <h3 style="font-size: 2.5rem; font-weight: 600; letter-spacing: 1px; margin-bottom: 1rem;">Up Close & Personal.</h3>
+              <p style="font-size: 1.2rem; line-height: 1.6; color: #e0e0e0;">Your space deserves a personal touch. Schedule a private consultation and let’s create something extraordinary together.</p>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item h-100">
+            <img src="images/furniture6.jpg" class="d-block w-100 h-100" alt="Furniture 3" style="object-fit: cover;">
+            <div class="carousel-caption text-left" style="top: 20%; left: 10%; max-width: 500px; font-family: 'Playfair Display', serif; color: #f4f4f4;">
+              <h3 style="font-size: 2.5rem; font-weight: 600; letter-spacing: 1px; margin-bottom: 1rem;">Design Made for You.</h3>
+              <p style="font-size: 1.2rem; line-height: 1.6; color: #e0e0e0;">From concept to creation, we’re here to make your dream space a reality. Book a one-on-one appointment and let’s get started!</p>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Description Paragraph (Left Aligned) -->
+      <p class="mt-4" style="font-family: 'Lora', serif; font-size: 1.2rem; color: #4a4a4a; line-height: 1.8; max-width: 800px; padding-left: 20px;">
+        Discover our latest furniture collections and find the perfect pieces for your home.
+      </p>
+    </div>
+  </section>
+
+  <!-- Offerings Section with Bootstrap Cards -->
+  <section id="offerings" class="section py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Offerings</h2>
+      <div class="row">
+        <!-- Card 1: Sofas -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="images/sofa.jpg" class="card-img-top img-fluid" alt="Sofa">
+            <div class="card-body">
+              <h5 class="card-title">Sofas & Couches</h5>
+              <p class="card-text">Comfortable and stylish sofas for your living room.</p>
+              <a href="#sofas" class="btn btn-primary">View Collection</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2: Tables -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="images/table.jpg" class="card-img-top img-fluid" alt="Table">
+            <div class="card-body">
+              <h5 class="card-title">Dining Tables</h5>
+              <p class="card-text">Elegant dining tables for family gatherings.</p>
+              <a href="#tables" class="btn btn-primary">View Collection</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3: Chairs -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="images/chair.jpg" class="card-img-top img-fluid" alt="Chair">
+            <div class="card-body">
+              <h5 class="card-title">Office Chairs</h5>
+              <p class="card-text">Ergonomic chairs for your workspace.</p>
+              <a href="#executive-chairs" class="btn btn-primary">View Collection</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sofa Collection Sections -->
+  <section id="sofas" class="section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4"></h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/sofa1.jpg" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Luxurious leather sofa for a modern look.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/sofa2.jpg" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Comfortable leather sofa for your living room.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/sofa3.jpg" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Stylish leather sofa for a cozy home.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Table Collection Sections -->
+  <section id="tables" class="section py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4"></h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/table1.jpg" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Classic wooden table for a timeless look.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/table2.jpg" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Elegant wooden table for your dining room.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/table3.jpg" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Rustic wooden table for a cozy vibe.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chair Collection Sections -->
+  <section id="executive-chairs" class="section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4"></h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/chair7.jpg" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Cozy chair for your home.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/chair9.jpeg" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Comfortable chair for long hours.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/chair8.jpg" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Homely chair for your dinings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

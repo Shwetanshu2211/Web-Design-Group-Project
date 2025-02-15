@@ -1,0 +1,500 @@
+
+  /* Navigation Bar 1 */
+  /* General Styling */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+  
+  /* Navbar Styling */
+  .NavBar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  
+  /* Navbar Center Section */
+  .NavBar1Center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar Login Section */
+  .NavBar1Login {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Space between icon and text */
+    font-size: 14px;
+  }
+  
+  .NavBar1Login a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+  }
+  
+  .LoginIcon {
+    font-size: 18px;
+    color: black;
+  }
+  
+  /* General Reset */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Left Section */
+  .NavBarLeft {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .MenuIcon {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .NavLinks a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+  
+  /* Right Section */
+  .NavBarRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .SearchBar {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    width: 200px;
+  }
+  
+  .SearchBar:focus {
+    border-color: #999;
+  }
+  
+  .SearchIcon {
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Navigation Bar 2 */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .NavBar2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Left Section */
+  .NavBar2Left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .NavLinks a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+  
+  /* Right Section */
+  .NavBar2Right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-bar {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    width: 200px;
+  }
+  
+  .search-bar:focus {
+    border-color: #999;
+  }
+  
+  .SearchIcon {
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  /* Slideshow Styles */
+.slideshow-container {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  border: none; /* Remove border for full-screen effect */
+}
+
+.slides {
+  display: none;
+  width: 100%;
+  height: 100%; /* Ensure slides take full height */
+}
+
+.slides img {
+  width: 100%;
+  height: 100%; /* Ensure images take full height */
+  object-fit: cover; /* Prevent image distortion */
+  border-radius: 0; /* Remove border radius for full-screen effect */
+}
+
+/* Navigation Arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 5px 5px 0;
+  z-index: 1000; /* Ensure arrows are above the slides */
+}
+
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots Container */
+.dots {
+  position: absolute;
+  bottom: 20px; /* Position dots at the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure dots are above the slides */
+}
+
+/* Individual Dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* General Image Hover Effect */
+.card img,
+.carousel-item img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card img:hover,
+.carousel-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional Effects for Offerings Section */
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+/* Slideshow Image Hover Effect */
+.slides img:hover {
+  filter: brightness(90%);
+  transform: scale(1.03);
+}
+
+/* Navigation Links Hover */
+.NavLinks a {
+  transition: color 0.3s ease-in-out;
+}
+
+.NavLinks a:hover {
+  color: #ffc107;
+}
+
+/* Button Hover Effect */
+.btn-primary {
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #ff9800;
+  transform: scale(1.05);
+}
+
+/* Dropdown Button Hover Effect */
+.dropdown-menu a:hover {
+  background-color: #f8f9fa;
+  color: #ff9800;
+}
+
+/* Search Bar Focus Effect */
+.form-control:focus {
+  border-color: #ff9800;
+  box-shadow: 0px 0px 8px rgba(255, 152, 0, 0.5);
+}
+
+/* About Us Section */
+.about-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* About Us Image */
+.about-img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+}
+
+/* About Us Content */
+.about-content {
+  text-align: left;
+  padding: 20px;
+}
+
+.about-content h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.about-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #006027;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #006027;
+  transform: scale(1.05);
+}
+
+/* Core Values Section */
+.about-values {
+  margin-top: 50px;
+}
+
+.about-values .icon-style {
+  font-size: 3rem;
+  color: #ff9800;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-values h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.about-values p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Icon Hover Effect */
+.about-values .icon-style:hover {
+  transform: scale(1.2);
+  color: #e68900;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    text-align: center;
+  }
+
+  .about-values .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
+
+/* Meet Our Designers Section */
+.meet-designers {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111;
+}
+
+/* Designer Image */
+.designer-img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.designer-img:hover {
+  transform: scale(1.05);
+}
+
+/* Designer Info */
+.meet-designers h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.meet-designers p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Button Styling with Hover Effect */
+.btn-hover {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-color: #333;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel Styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row.align-items-start {
+    flex-direction: column;
+  }
+
+  .assistance-title,
+  .assistance-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .col-lg-6 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
